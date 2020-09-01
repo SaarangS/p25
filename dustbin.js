@@ -15,7 +15,7 @@ class dustbin {
 		this.rightWallBody=Bodies.rectangle(this.x+this.dustbinWidth/2, this.y-this.dustbinHeight/2, this.wallThickness, this.dustbinHeight, {isStatic:true})
 		Matter.Body.setAngle(this.rightWallBody, -1*this.angle);
 
-		this.image = loadImage('pictures/dustbin.png');
+		this.image = loadImage('dustbin.png');
 
 		World.add(world, this.bottomBody)
 		World.add(world, this.leftWallBody)
